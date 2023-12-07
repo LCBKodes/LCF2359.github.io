@@ -84,6 +84,11 @@ main {
     text-align: center;
 }
 
+section p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
 .training-table {
     border-collapse: collapse;
     width: 100%;
