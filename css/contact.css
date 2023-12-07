@@ -1,0 +1,280 @@
+/*  Name: Bhavya Kaudinya
+ Enrollment Number: C0919320
+ File Name:  styles.css
+ Date: December 6, 2023 */
+
+/* CSS RESET */
+body, header, nav, main, footer, h1, div, img, ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set the background color for the website */
+body {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+/* Style the header element */
+header {
+    border-radius: 10px;
+    text-align: center;
+    color: #0b89f0;
+}
+
+/* Style rules for navigation area */
+nav {
+    display: grid;
+    /* grid-template-columns: 1fr auto 1fr; Three columns, adjust as needed */
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    background-color: rgb(124, 121, 121);
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 16px;
+    min-width: 80%;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change the color on hover */
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
+
+.banner {
+    max-width: 100%;
+    height: 20vh; /* Adjust the height percentage as needed (in this case, 20%) */
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 48px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* Style the main content element */
+main {
+    display: block;
+    /* justify-content: center; */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group .radio-group {
+    display: grid; /* Use grid for radio-group */
+    grid-template-columns: auto auto; /* Display radio and label in separate columns */
+    align-items: center;
+}
+
+.form-group .radio-group label {
+    margin-left: 8px; /* Add margin to separate radio and label */
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #333;
+    margin-top: 8px; /* Add margin-top for separation */
+}
+
+fieldset {
+    border: 2px solid #007acc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007acc; 
+    margin-bottom: 10px;
+}
+
+.label-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    float: left;
+    font-size: 1.2em;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 99%; /* Adjusted width */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.label-group {
+    display: grid; /* Use grid for label-group */
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+textarea{
+    width: 99%;
+}
+
+.buttons {
+    display: grid; /* Use grid for buttons */
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Add margin-top for separation */
+}
+
+button[type="reset"] {
+    background-color: #ddd;
+    color: #333;
+}
+
+
+/* Reduce the font size for the footer and center it, include a top margin */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .home .logo {
+        max-width: 80%;
+        height: 30vh; /* Adjust the height percentage for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+
+    .content-container {
+        padding: 10px;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .tablet, .desktop { 
+        /* display: none;  */
+        font-size: 8px;
+    }
+
+    .heading{
+        font-size: 24px
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .mobile, .desktop { 
+        /* display: none;  */
+        font-size: 16px;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+    .mobile, .tablet { 
+        /* display: none;  */
+        font-size: 16px;
+    }
+
+    nav li a{
+        font-size: 1.5em;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+

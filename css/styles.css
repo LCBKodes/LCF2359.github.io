@@ -1,0 +1,229 @@
+/*  Name: Bhavya Kaudinya
+ Enrollment Number: C0919320
+ File Name:  styles.css
+ Date: December 6, 2023 */
+
+/* CSS RESET */
+body, header, nav, main, footer, h1, div, img, ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set the background color for the website */
+body {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+/* Style the header element */
+header {
+    border-radius: 10px;
+    text-align: center;
+    color: #0b89f0;
+}
+
+/* Style rules for navigation area */
+nav {
+    display: grid;
+    /* grid-template-columns: 1fr auto 1fr; Three columns, adjust as needed */
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    background-color: rgb(124, 121, 121);
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 16px;
+    min-width: 80%;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change the color on hover */
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
+
+.banner {
+    max-width: 100%;
+    height: 20vh; /* Adjust the height percentage as needed (in this case, 20%) */
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 48px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* Style the main content element */
+main {
+    display: block;
+    /* justify-content: center; */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.training-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.training-table caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007acc; /* Caption color */
+}
+
+.training-table th, .training-table td {
+    border: 2px solid #007acc; /* Border style */
+    padding: 10px;
+    text-align: left;
+}
+
+.training-table th {
+    background-color: #007acc;
+    color: #fff;
+    padding: 12px;
+}
+
+.training-table tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+.training-table tr:hover {
+    background-color: #e0e0e0; /* Highlight on mouse over */
+}
+
+.additional-content {
+    margin-top: 20px;
+}
+
+.additional-content h2 {
+    color: #007acc; /* Heading color */
+}
+
+/* Change the color of at least one heading */
+.heading {
+    color: #007acc;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.special-heading{
+    color: black;
+}
+
+.sub-heading{
+    font-size: 16px;
+}
+
+.product-of-the-week{
+    font-size: 24px;
+}
+
+.product-of-the-week img{
+    width: 80%;
+}
+
+.customer-guarantee img{
+    width: 50%;
+}
+
+.reason{
+    font-size: 18px;
+    padding: none;
+    font-weight: 500;
+}
+
+.reason img{
+    width: 20%;
+}
+
+/* Reduce the font size for the footer and center it, include a top margin */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .home .logo {
+        max-width: 80%;
+        height: 30vh; /* Adjust the height percentage for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+
+    .content-container {
+        padding: 10px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .tablet, .desktop { 
+        /* display: none;  */
+        font-size: 8px;
+    }
+
+    .heading{
+        font-size: 24px
+    }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .mobile, .desktop { 
+        /* display: none;  */
+        font-size: 16px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+    .mobile, .tablet { 
+        /* display: none;  */
+        font-size: 16px;
+    }
+
+    nav li a{
+        font-size: 1.5em;
+    }
+}
+
